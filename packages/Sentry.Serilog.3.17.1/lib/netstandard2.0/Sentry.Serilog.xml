@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sentry.Serilog</name>
+    </assembly>
+    <members>
+        <member name="T:Sentry.Serilog.Constants">
+            <summary>
+            Serilog Constant Values.
+            </summary>
+        </member>
+        <member name="F:Sentry.Serilog.Constants.SdkName">
+            <summary>
+            Serilog SDK name.
+            </summary>
+        </member>
+        <member name="T:Sentry.Serilog.SentrySerilogOptions">
+            <summary>
+            Sentry Options for Serilog logging
+            </summary>
+            <inheritdoc />
+        </member>
+        <member name="P:Sentry.Serilog.SentrySerilogOptions.InitializeSdk">
+            <summary>
+            Whether to initialize this SDK through this integration
+            </summary>
+        </member>
+        <member name="P:Sentry.Serilog.SentrySerilogOptions.MinimumEventLevel">
+            <summary>
+            Minimum log level to send an event.
+            </summary>
+            <remarks>
+            Events with this level or higher will be sent to Sentry.
+            </remarks>
+            <value>
+            The minimum event level.
+            </value>
+        </member>
+        <member name="P:Sentry.Serilog.SentrySerilogOptions.MinimumBreadcrumbLevel">
+            <summary>
+            Minimum log level to record a breadcrumb.
+            </summary>
+            <remarks>Events with this level or higher will be stored as <see cref="T:Sentry.Breadcrumb"/></remarks>
+            <value>
+            The minimum breadcrumb level.
+            </value>
+        </member>
+        <member name="P:Sentry.Serilog.SentrySerilogOptions.FormatProvider">
+            <summary>
+            Optional <see cref="T:System.IFormatProvider"/>
+            </summary>
+        </member>
+        <member name="P:Sentry.Serilog.SentrySerilogOptions.TextFormatter">
+            <summary>
+            Optional <see cref="T:Serilog.Formatting.ITextFormatter"/>
+            </summary>
+        </member>
+        <member name="T:Sentry.Serilog.SentrySink">
+            <summary>
+            Sentry Sink for Serilog
+            </summary>
+            <inheritdoc cref="T:System.IDisposable" />
+            <inheritdoc cref="T:Serilog.Core.ILogEventSink" />
+        </member>
+        <member name="T:Serilog.SentrySinkExtensions">
+            <summary>
+            Sentry Serilog Sink extensions.
+            </summary>
+        </member>
+        <member name="M:Serilog.SentrySinkExtensions.Sentry(Serilog.Configuration.LoggerSinkConfiguration,System.String,Serilog.Events.LogEventLevel,Serilog.Events.LogEventLevel,System.IFormatProvider,Serilog.Formatting.ITextFormatter,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Single},System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.TimeSpan},System.Nullable{System.Net.DecompressionMethods},System.Nullable{System.IO.Compression.CompressionLevel},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{Sentry.SentryLevel},System.Nullable{System.Boolean},System.Nullable{Sentry.DeduplicateMode},System.Nullable{System.Boolean},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Add Sentry Serilog Sink.
+            </summary>
+            <param name="loggerConfiguration">The logger configuration .<seealso cref="T:Serilog.Configuration.LoggerSinkConfiguration"/></param>
+            <param name="dsn">The Sentry DSN. <seealso cref="P:Sentry.SentryOptions.Dsn"/></param>
+            <param name="minimumEventLevel">Minimum log level to send an event. <seealso cref="P:Sentry.Serilog.SentrySerilogOptions.MinimumEventLevel"/></param>
+            <param name="minimumBreadcrumbLevel">Minimum log level to record a breadcrumb. <seealso cref="P:Sentry.Serilog.SentrySerilogOptions.MinimumBreadcrumbLevel"/></param>
+            <param name="formatProvider">The Serilog format provider. <seealso cref="T:System.IFormatProvider"/></param>
+            <param name="textFormatter">The Serilog text formatter. <seealso cref="T:Serilog.Formatting.ITextFormatter"/></param>
+            <param name="sendDefaultPii">Whether to include default Personal Identifiable information. <seealso cref="P:Sentry.SentryOptions.SendDefaultPii"/></param>
+            <param name="isEnvironmentUser">Whether to report the <see cref="P:System.Environment.UserName"/> as the User affected in the event. <seealso cref="P:Sentry.SentryOptions.IsEnvironmentUser"/></param>
+            <param name="serverName">Gets or sets the name of the server running the application. <seealso cref="P:Sentry.SentryOptions.ServerName"/></param>
+            <param name="attachStackTrace">Whether to send the stack trace of a event captured without an exception. <seealso cref="P:Sentry.SentryOptions.AttachStacktrace"/></param>
+            <param name="maxBreadcrumbs">Gets or sets the maximum breadcrumbs. <seealso cref="P:Sentry.SentryOptions.MaxBreadcrumbs"/></param>
+            <param name="sampleRate">The rate to sample events. <seealso cref="P:Sentry.SentryOptions.SampleRate"/></param>
+            <param name="release">The release version of the application. <seealso cref="P:Sentry.SentryOptions.Release"/></param>
+            <param name="environment">The environment the application is running. <seealso cref="P:Sentry.SentryOptions.Environment"/></param>
+            <param name="maxQueueItems">The maximum number of events to keep while the worker attempts to send them. <seealso cref="P:Sentry.SentryOptions.MaxQueueItems"/></param>
+            <param name="shutdownTimeout">How long to wait for events to be sent before shutdown. <seealso cref="P:Sentry.SentryOptions.ShutdownTimeout"/></param>
+            <param name="decompressionMethods">Decompression methods accepted. <seealso cref="P:Sentry.SentryOptions.DecompressionMethods"/></param>
+            <param name="requestBodyCompressionLevel">The level of which to compress the <see cref="T:Sentry.SentryEvent"/> before sending to Sentry. <seealso cref="P:Sentry.SentryOptions.RequestBodyCompressionLevel"/></param>
+            <param name="requestBodyCompressionBuffered">Whether the body compression is buffered and the request 'Content-Length' known in advance. <seealso cref="P:Sentry.SentryOptions.RequestBodyCompressionBuffered"/></param>
+            <param name="debug">Whether to log diagnostics messages. <seealso cref="P:Sentry.SentryOptions.Debug"/></param>
+            <param name="diagnosticLevel">The diagnostics level to be used. <seealso cref="P:Sentry.SentryOptions.DiagnosticLevel"/></param>
+            <param name="reportAssemblies">Whether or not to include referenced assemblies in each event sent to sentry. Defaults to <see langword="true"/>. <seealso cref="P:Sentry.SentryOptions.ReportAssemblies"/></param>
+            <param name="deduplicateMode">What modes to use for event automatic de-duplication. <seealso cref="P:Sentry.SentryOptions.DeduplicateMode"/></param>
+            <param name="initializeSdk">Whether to initialize this SDK through this integration. <seealso cref="P:Sentry.Serilog.SentrySerilogOptions.InitializeSdk"/></param>
+            <param name="defaultTags">Defaults tags to add to all events. <seealso cref="P:Sentry.SentryOptions.DefaultTags"/></param>
+            <returns><see cref="T:Serilog.LoggerConfiguration"/></returns>
+            <example>This sample shows how each item may be set from within a configuration file:
+            <code>
+            {
+                "Serilog": {
+                    "Using": [
+                        "Serilog",
+                        "Sentry",
+                    ],
+                    "WriteTo": [{
+                            "Name": "Sentry",
+                            "Args": {
+                                "dsn": "https://MY-DSN@sentry.io",
+                                "minimumBreadcrumbLevel": "Verbose",
+                                "minimumEventLevel": "Error",
+                                "outputTemplate": "{Timestamp:o} [{Level:u3}] ({Application}/{MachineName}/{ThreadId}) {Message}{NewLine}{Exception}"///
+                                "sendDefaultPii": false,
+                                "isEnvironmentUser": false,
+                                "serverName": "MyServerName",
+                                "attachStackTrace": false,
+                                "maxBreadcrumbs": 20,
+                                "sampleRate": 0.5,
+                                "release": "0.0.1",
+                                "environment": "staging",
+                                "maxQueueItems": 100,
+                                "shutdownTimeout": "00:00:05",
+                                "decompressionMethods": "GZip",
+                                "requestBodyCompressionLevel": "NoCompression",
+                                "requestBodyCompressionBuffered": false,
+                                "debug": false,
+                                "diagnosticLevel": "Debug",
+                                "reportAssemblies": false,
+                                "deduplicateMode": "All",
+                                "initializeSdk": true,
+                                "defaultTags": {
+                                    "key-1", "value-1",
+                                    "key-2", "value-2"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:Serilog.SentrySinkExtensions.ConfigureSentrySerilogOptions(Sentry.Serilog.SentrySerilogOptions,System.String,System.Nullable{Serilog.Events.LogEventLevel},System.Nullable{Serilog.Events.LogEventLevel},System.IFormatProvider,Serilog.Formatting.ITextFormatter,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Single},System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.TimeSpan},System.Nullable{System.Net.DecompressionMethods},System.Nullable{System.IO.Compression.CompressionLevel},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{Sentry.SentryLevel},System.Nullable{System.Boolean},System.Nullable{Sentry.DeduplicateMode},System.Nullable{System.Boolean},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Configure the Sentry Serilog Sink.
+            </summary>
+            <param name="sentrySerilogOptions">The logger configuration to configure with the given parameters.</param>
+            <param name="dsn">The Sentry DSN. <seealso cref="P:Sentry.SentryOptions.Dsn"/></param>
+            <param name="minimumEventLevel">Minimum log level to send an event. <seealso cref="P:Sentry.Serilog.SentrySerilogOptions.MinimumEventLevel"/></param>
+            <param name="minimumBreadcrumbLevel">Minimum log level to record a breadcrumb. <seealso cref="P:Sentry.Serilog.SentrySerilogOptions.MinimumBreadcrumbLevel"/></param>
+            <param name="formatProvider">The Serilog format provider. <seealso cref="T:System.IFormatProvider"/></param>
+            <param name="textFormatter">The Serilog text formatter. <seealso cref="T:Serilog.Formatting.ITextFormatter"/></param>
+            <param name="sendDefaultPii">Whether to include default Personal Identifiable information. <seealso cref="P:Sentry.SentryOptions.SendDefaultPii"/></param>
+            <param name="isEnvironmentUser">Whether to report the <see cref="P:System.Environment.UserName"/> as the User affected in the event. <seealso cref="P:Sentry.SentryOptions.IsEnvironmentUser"/></param>
+            <param name="serverName">Gets or sets the name of the server running the application. <seealso cref="P:Sentry.SentryOptions.ServerName"/></param>
+            <param name="attachStackTrace">Whether to send the stack trace of a event captured without an exception. <seealso cref="P:Sentry.SentryOptions.AttachStacktrace"/></param>
+            <param name="maxBreadcrumbs">Gets or sets the maximum breadcrumbs. <seealso cref="P:Sentry.SentryOptions.MaxBreadcrumbs"/></param>
+            <param name="sampleRate">The rate to sample events. <seealso cref="P:Sentry.SentryOptions.SampleRate"/></param>
+            <param name="release">The release version of the application. <seealso cref="P:Sentry.SentryOptions.Release"/></param>
+            <param name="environment">The environment the application is running. <seealso cref="P:Sentry.SentryOptions.Environment"/></param>
+            <param name="maxQueueItems">The maximum number of events to keep while the worker attempts to send them. <seealso cref="P:Sentry.SentryOptions.MaxQueueItems"/></param>
+            <param name="shutdownTimeout">How long to wait for events to be sent before shutdown. <seealso cref="P:Sentry.SentryOptions.ShutdownTimeout"/></param>
+            <param name="decompressionMethods">Decompression methods accepted. <seealso cref="P:Sentry.SentryOptions.DecompressionMethods"/></param>
+            <param name="requestBodyCompressionLevel">The level of which to compress the <see cref="T:Sentry.SentryEvent"/> before sending to Sentry. <seealso cref="P:Sentry.SentryOptions.RequestBodyCompressionLevel"/></param>
+            <param name="requestBodyCompressionBuffered">Whether the body compression is buffered and the request 'Content-Length' known in advance. <seealso cref="P:Sentry.SentryOptions.RequestBodyCompressionBuffered"/></param>
+            <param name="debug">Whether to log diagnostics messages. <seealso cref="P:Sentry.SentryOptions.Debug"/></param>
+            <param name="diagnosticLevel">The diagnostics level to be used. <seealso cref="P:Sentry.SentryOptions.DiagnosticLevel"/></param>
+            <param name="reportAssemblies">Whether or not to include referenced assemblies in each event sent to sentry. Defaults to <see langword="true"/>. <seealso cref="P:Sentry.SentryOptions.ReportAssemblies"/></param>
+            <param name="deduplicateMode">What modes to use for event automatic de-duplication. <seealso cref="P:Sentry.SentryOptions.DeduplicateMode"/></param>
+            <param name="initializeSdk">Whether to initialize this SDK through this integration. <seealso cref="P:Sentry.Serilog.SentrySerilogOptions.InitializeSdk"/></param>
+            <param name="defaultTags">Defaults tags to add to all events. <seealso cref="P:Sentry.SentryOptions.DefaultTags"/></param>
+        </member>
+        <member name="M:Serilog.SentrySinkExtensions.Sentry(Serilog.Configuration.LoggerSinkConfiguration,System.Action{Sentry.Serilog.SentrySerilogOptions})">
+            <summary>
+            Add Sentry sink to Serilog.
+            </summary>
+            <param name="loggerConfiguration">The logger configuration.</param>
+            <param name="configureOptions">The configure options callback.</param>
+        </member>
+    </members>
+</doc>

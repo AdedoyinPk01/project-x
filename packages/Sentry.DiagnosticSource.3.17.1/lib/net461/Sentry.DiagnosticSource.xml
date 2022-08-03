@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sentry.DiagnosticSource</name>
+    </assembly>
+    <members>
+        <member name="T:Sentry.Internals.DiagnosticSource.SentryDiagnosticSubscriber">
+            <summary>
+            Class that subscribes to specific listeners from DiagnosticListener.
+            </summary>
+        </member>
+        <member name="M:Sentry.Internals.DiagnosticSource.SentryDiagnosticSubscriber.Dispose">
+            <summary>
+            Dispose all registered integrations.
+            </summary>
+        </member>
+        <member name="T:Sentry.Internals.DiagnosticSource.SentryEFCoreListener">
+            <summary>
+            Class that consumes Entity Framework Core events.
+            </summary>
+        </member>
+        <member name="F:Sentry.Internals.DiagnosticSource.SentryEFCoreListener.EFQueryStartCompiling">
+            <summary>
+            Used for EF Core 2.X and 3.X.
+            <seealso href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.coreeventid.querymodelcompiling?view=efcore-3.1"/>
+            </summary>
+        </member>
+        <member name="F:Sentry.Internals.DiagnosticSource.SentryEFCoreListener.EFQueryCompiling">
+            <summary>
+            Used for EF Core 2.X and 3.X.
+            <seealso href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.coreeventid.querymodelcompiling?view=efcore-3.1"/>
+            </summary>
+        </member>
+        <member name="M:Sentry.Internals.DiagnosticSource.SentryEFCoreListener.FilterNewLineValue(System.Object)">
+            <summary>
+            Get the Query with error message and remove the uneeded values.
+            </summary>
+            <example>
+            Compiling query model:
+            EF initialize...\r\nEF Query...
+            becomes:
+            EF Query...
+            </example>
+            <param name="value">the query to be parsed value</param>
+            <returns>the filtered query</returns>
+        </member>
+        <member name="T:Sentry.SentryOptionsDiagnosticExtensions">
+            <summary>
+            The additional Sentry Options extensions from Sentry Diagnostic Listener.
+            </summary>
+        </member>
+        <member name="M:Sentry.SentryOptionsDiagnosticExtensions.AddDiagnosticSourceIntegration(Sentry.SentryOptions)">
+            <summary>
+            Attach Sentry to System DiagnosticSource.
+            </summary>
+            <param name="options">The Sentry options.</param>
+        </member>
+        <member name="M:Sentry.SentryOptionsDiagnosticExtensions.DisableDiagnosticSourceIntegration(Sentry.SentryOptions)">
+            <summary>
+            Disables the integrations with Diagnostic source.
+            </summary>
+            <param name="options">The SentryOptions to remove the integration from.</param>
+        </member>
+    </members>
+</doc>

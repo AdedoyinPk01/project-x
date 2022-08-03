@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sentry.AspNet</name>
+    </assembly>
+    <members>
+        <member name="T:Sentry.AspNet.HttpContextExtensions">
+            <summary>
+            Sentry extensions for <see cref="T:System.Web.HttpContext"/>.
+            </summary>
+        </member>
+        <member name="M:Sentry.AspNet.HttpContextExtensions.StartSentryTransaction(System.Web.HttpContext)">
+            <summary>
+            Starts a new Sentry transaction that encompasses the currently executing HTTP request.
+            </summary>
+        </member>
+        <member name="M:Sentry.AspNet.HttpContextExtensions.FinishSentryTransaction(System.Web.HttpContext)">
+            <summary>
+            Finishes an active Sentry transaction that encompasses the currently executing HTTP request (if present).
+            </summary>
+        </member>
+        <member name="T:Sentry.AspNet.SentryAspNetOptionsExtensions">
+            <summary>
+            SentryOptions extensions.
+            </summary>
+        </member>
+        <member name="M:Sentry.AspNet.SentryAspNetOptionsExtensions.AddAspNet(Sentry.SentryOptions,Sentry.Extensibility.RequestSize)">
+            <summary>
+            Adds ASP.NET classic integration.
+            </summary>
+        </member>
+        <member name="T:Sentry.AspNet.SentryHttpServerUtilityExtensions">
+            <summary>
+            HttpServerUtility extensions.
+            </summary>
+        </member>
+        <member name="M:Sentry.AspNet.SentryHttpServerUtilityExtensions.CaptureLastError(System.Web.HttpServerUtility)">
+            <summary>
+            Captures the last error from the given HttpServerUtility and sends it to Sentry.
+            </summary>
+            <param name="server">The HttpServerUtility that contains the last error.</param>
+            <returns>A SentryId.</returns>
+        </member>
+    </members>
+</doc>

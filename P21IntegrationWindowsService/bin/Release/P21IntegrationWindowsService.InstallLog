@@ -1,0 +1,42 @@
+﻿Uninstalling assembly 'C:\Users\adedoyin\Documents\repo\P21IntegrationWindowsService\P21IntegrationWindowsService\bin\Release\P21IntegrationWindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\adedoyin\Documents\repo\P21IntegrationWindowsService\P21IntegrationWindowsService\bin\Release\P21IntegrationWindowsService.InstallLog
+   assemblypath = C:\Users\adedoyin\Documents\repo\P21IntegrationWindowsService\P21IntegrationWindowsService\bin\Release\P21IntegrationWindowsService.exe
+Removing EventLog source P21IntegrationWindowsService.
+Service P21IntegrationWindowsService is being removed from the system...
+Service P21IntegrationWindowsService was successfully removed from the system.
+Installing assembly 'C:\Users\adedoyin\Documents\repo\P21IntegrationWindowsService\P21IntegrationWindowsService\bin\Release\P21IntegrationWindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\adedoyin\Documents\repo\P21IntegrationWindowsService\P21IntegrationWindowsService\bin\Release\P21IntegrationWindowsService.InstallLog
+   assemblypath = C:\Users\adedoyin\Documents\repo\P21IntegrationWindowsService\P21IntegrationWindowsService\bin\Release\P21IntegrationWindowsService.exe
+Installing service P21IntegrationWindowsService...
+Service P21IntegrationWindowsService has been successfully installed.
+Creating EventLog source P21IntegrationWindowsService in log Application...
+Committing assembly 'C:\Users\adedoyin\Documents\repo\P21IntegrationWindowsService\P21IntegrationWindowsService\bin\Release\P21IntegrationWindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\adedoyin\Documents\repo\P21IntegrationWindowsService\P21IntegrationWindowsService\bin\Release\P21IntegrationWindowsService.InstallLog
+   assemblypath = C:\Users\adedoyin\Documents\repo\P21IntegrationWindowsService\P21IntegrationWindowsService\bin\Release\P21IntegrationWindowsService.exe
+Uninstalling assembly 'C:\Users\adedoyin\Documents\repo\P21IntegrationWindowsService\P21IntegrationWindowsService\bin\Release\P21IntegrationWindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\adedoyin\Documents\repo\P21IntegrationWindowsService\P21IntegrationWindowsService\bin\Release\P21IntegrationWindowsService.InstallLog
+   assemblypath = C:\Users\adedoyin\Documents\repo\P21IntegrationWindowsService\P21IntegrationWindowsService\bin\Release\P21IntegrationWindowsService.exe
+Removing EventLog source P21IntegrationWindowsService.
+Service P21IntegrationWindowsService is being removed from the system...
+Service P21IntegrationWindowsService was successfully removed from the system.
+Installing assembly 'C:\Users\adedoyin\Documents\repo\P21IntegrationWindowsService\P21IntegrationWindowsService\bin\Release\P21IntegrationWindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\adedoyin\Documents\repo\P21IntegrationWindowsService\P21IntegrationWindowsService\bin\Release\P21IntegrationWindowsService.InstallLog
+   assemblypath = C:\Users\adedoyin\Documents\repo\P21IntegrationWindowsService\P21IntegrationWindowsService\bin\Release\P21IntegrationWindowsService.exe
+Installing service P21IntegrationWindowsService...
+Service P21IntegrationWindowsService has been successfully installed.
+Creating EventLog source P21IntegrationWindowsService in log Application...
+Committing assembly 'C:\Users\adedoyin\Documents\repo\P21IntegrationWindowsService\P21IntegrationWindowsService\bin\Release\P21IntegrationWindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\adedoyin\Documents\repo\P21IntegrationWindowsService\P21IntegrationWindowsService\bin\Release\P21IntegrationWindowsService.InstallLog
+   assemblypath = C:\Users\adedoyin\Documents\repo\P21IntegrationWindowsService\P21IntegrationWindowsService\bin\Release\P21IntegrationWindowsService.exe

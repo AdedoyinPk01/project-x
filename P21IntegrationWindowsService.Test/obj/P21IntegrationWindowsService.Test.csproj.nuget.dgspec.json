@@ -1,0 +1,110 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\adedoyin\\Documents\\repo\\P21IntegrationWindowsService\\P21IntegrationWindowsService.Test\\P21IntegrationWindowsService.Test.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\adedoyin\\Documents\\repo\\P21IntegrationWindowsService\\P21IntegrationWindowsService.Test\\P21IntegrationWindowsService.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\adedoyin\\Documents\\repo\\P21IntegrationWindowsService\\P21IntegrationWindowsService.Test\\P21IntegrationWindowsService.Test.csproj",
+        "projectName": "P21IntegrationWindowsService.Test",
+        "projectPath": "C:\\Users\\adedoyin\\Documents\\repo\\P21IntegrationWindowsService\\P21IntegrationWindowsService.Test\\P21IntegrationWindowsService.Test.csproj",
+        "packagesPath": "C:\\Users\\adedoyin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adedoyin\\Documents\\repo\\P21IntegrationWindowsService\\P21IntegrationWindowsService.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\adedoyin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "C:\\Users\\adedoyin\\Documents\\repo\\P21IntegrationWindowsService\\P21IntegrationWindowsService\\P21IntegrationWindowsService.csproj": {
+                "projectPath": "C:\\Users\\adedoyin\\Documents\\repo\\P21IntegrationWindowsService\\P21IntegrationWindowsService\\P21IntegrationWindowsService.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net461": {
+          "targetAlias": "net461",
+          "dependencies": {
+            "AutoFixture": {
+              "target": "Package",
+              "version": "[4.17.0, )"
+            },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.7.0, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.2.10, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.9.4, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.1, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\adedoyin\\Documents\\repo\\P21IntegrationWindowsService\\P21IntegrationWindowsService\\P21IntegrationWindowsService.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\adedoyin\\Documents\\repo\\P21IntegrationWindowsService\\P21IntegrationWindowsService\\P21IntegrationWindowsService.csproj",
+        "projectName": "P21IntegrationWindowsService",
+        "projectPath": "C:\\Users\\adedoyin\\Documents\\repo\\P21IntegrationWindowsService\\P21IntegrationWindowsService\\P21IntegrationWindowsService.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    }
+  }
+}
